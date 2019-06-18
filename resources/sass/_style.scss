@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #f6f6f6;
+
+  a.btn, button.btn {
+    @extend %btn-orr;
+  }
+}
+
+.uk-navbar-dropdown-nav > li > a {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.uk-nav.uk-navbar-dropdown-nav {
+  li.markAsRead, #read {
+    color: lighten(#b65101, 7);
+    font-weight: 600;
+    background: #cce0f0;
+  }
+}
+
+#new {
+  padding: 6px 20px;
+}
+
+.head-label {
+  @extend %heading;
+}
+
+button.btn-d {
+  @extend %danger-btn;
+}
+
+.uk-box-shadow-small, .uk-box-shadow-medium, .uk-box-shadow-large {
+  background: #fefefe;
+}
+
+.uk-navbar-container.uk-navbar-primary, .uk-navbar-dropdown {
+  background-color: darken($nav-bg, 10);
+  color: $nav-color;
+
+  a {
+    color: inherit;
+
+    &:hover, &:active, &:focus {
+      background: lighten($nav-bg, 2);
+      color: #fefefe;
+    }
+  }
+}
+
+.uk-navbar-nav > li.uk-active > a {
+  background: lighten($nav-bg, 2);
+  color: #fefefe;
+}
+
+.uk-offcanvas-bar {
+  background: darken($nav-bg, 12);
+
+  .uk-nav-primary li {
+    a {
+      color: $dark-nav-color;
+
+      &:hover, &:focus, &:active {
+        color: #fefefe;
+      }
+    }
+  }
+}
+
+.uk-navbar-item.uk-logo {
+  color: darken($nav-color, 10);
+
+  &:hover {
+    color: #fefefe;
+  }
+}
+
+h1.uk-heading-bullet {
+  color: $dark-nav-color;
+}
+
+section#index {
+  #hero {
+    background-color: #efefef;
+    color: #fefefe;
+
+    h2 {
+      color: $nav-color;
+    }
+
+    div.uk-text-primary {
+      font-style: italic;
+    }
+
+    .uk-select {
+      background-color: #fff;
+      color: #333;
+    }
+  }
+
+  #jobs {
+    h4, h2 {
+      color: darken($nav-bg, 10);
+      font-weight: 700;
+    }
+
+    .company {
+      color: $dark-nav-color;
+      font-weight: 600;
+    }
+
+    a#det {
+      &:hover {
+        background: lighten(#222, 20);
+      }
+
+      transition: background 1500ms ease-in;
+    }
+  }
+}
+
+#view-job {
+  #top {
+    h3 {
+      @extend %heading;
+
+      color: darken($dark-nav-color, 2);
+    }
+  }
+
+  h3.title {
+    color: darken($dark-nav-color, 2);
+  }
+}
+
+#create, #apply-job {
+  form {
+    h2 {
+      @extend %heading;
+    }
+
+    label.uk-form-label {
+      font-weight: 700;
+      color: complement($nav-color);
+    }
+  }
+}

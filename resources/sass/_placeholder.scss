@@ -1,0 +1,24 @@
+%btn-orr {
+  background: $dark-nav-color;
+  color: #fefefe;
+
+  &:hover, &:active, &:focus {
+    background: lighten($dark-nav-color, 4);
+    color: #fefefe;
+  }
+}
+
+%heading {
+  color: $dark-nav-color;
+  font-weight: 700;
+}
+
+%danger-btn {
+  background: $danger-color;
+  color: #fefefe;
+
+  &:hover, &:active, &:focus {
+    background: lighten($dark-nav-color, 4);
+    color: #fefefe;
+  }
+}
